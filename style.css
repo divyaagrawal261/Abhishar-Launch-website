@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus', serif;
+    box-sizing: border-box;
+}
+.loader{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+.loading-animation{
+    width: 100vw;
+}
+p{
+    font-family: 'Marcellus', serif;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+.wrapper{
+    min-height: 100vh;
+    background-image: url(assests/bg6.jpg);
+    background-size: 100% 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+.tagline{
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+    font-size: 30px;
+}
+.Abhishar{
+    color: white;
+    font-size: 72px;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+.tags{
+    background-color: rgba(0, 0, 0, 0.521);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 33%;
+    color: white;
+    font-size: 72px;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+}
+.picture{
+    height: 100%;
+}
+#enchantment{
+    justify-content: left;
+    background-color: black;
+}
+#imagination{
+    background-color: #010511;
+    justify-content: left;
+}
+#magic{
+    background-color: #0f2226;
+    justify-content: right;
+}
+.greyContainer{
+    padding:50px;
+    background-image: url(assests/img2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading1{
+    color: white;
+    margin-bottom: 70px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 60px;
+
+}
+.redContainer
+{
+    background-image: url(assests/landing-rev-slider-img-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.midContainer{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.midHeading{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+
+}
+.blackClover{
+    position: relative;
+    background-image: url(assests/landing-rev-2-image-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateX(65vw);
+    height: 100vh;
+}
+.wizardsContainer{
+    background-image: url(assests/Magic.jpg);
+    background-size: cover;
+}
+.SwordsContainer{
+    background-image:url(assests/sword.jpg) ;
+    background-size: cover;
+}
+.BeastsContainer{
+    background-image: url(assests/beast.jpg);
+    background-size: cover;
+}
+#stage{
+    min-height: 100vh;
+}
+.noisyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+}
+#abhisharInfo{
+    background-image: url(assests/dark-background.gif);
+}
+#intro{
+    background-image: url(assests/map.jpg);
+}
+.skullContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assests/landing-rev-slider-img-5-1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.launchVideo{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.launchVideo iframe{
+    height: 100%;
+    width: 100%;
+}
+  .fadein {
+    opacity: 0;
+    transition: all 2.5s;
+    transform: translate(0, -300px);
+  }
+  
+  .fadein.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
