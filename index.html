@@ -22,18 +22,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css">
   </head>
-  <body>
+  <body onload="hide()">
     <div class="loader">
-        <video autoplay loop>
-            <source src="assests/loader1.mp4" type="video/mp4">
-        </video>
     </div>
+    <!--
+      <section>
+        <img src="images/stars.avif" id="stars">
+        <img src="images/moon.avif.png" id="moon">
+      <img src="images/mountains-behinf.webp" id="mountains-behinf">
+      <h2 id="text">MOON LIGHT</h2>
+      <img src="images/mountains-front.jpg.png" id="mountains-front">
+    </section>
+    <div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum unde alias distinctio vero, minima mollitia illum ea recusandae asperiores laudantium.</div> -->
+    <div class="main-page">
+      <header>
+        <a href="#" class="logo">AASF</a>
+        <ul>
+          <li><a href="https://www.aasf.in" class="active">AASF Website</a></li>
+          <li><a href="#launchVideo">Launch Video</a></li>
+          <li><a href="https://www.aasf.in/abhishar">Previous Versions</a></li>
+        </ul>
+      </header>
     <div class="wrapper">
+      <img src="assests/dragon1.png" alt="" id="dragon1">
+      <img src="assests/dragon20.png" alt="" id="dragon2">
       <h1 class="Abhishar">ABHISHAR v13.0</h1>
       <h2 class="tagline">Alohmora into the alley of fantasy</h2>
     </div>
-    <canvas id="stage"> </canvas>
+    <!-- <canvas id="stage"> </canvas> -->
     <div class="greyContainer" id="intro">
       <p class="heading1">
         "Welcome to a world where imagination knows no bounds, where the
@@ -59,13 +77,14 @@
       </div>
     </div>
 
-    <div class="launchVideo">
+    <div class="launchVideo" id="launchVideo">
       <iframe
         src="https://res.cloudinary.com/kunaaaaalll/video/upload/v1668946764/Abhishar/InShot_20221120_163233807_asnr8y.mp4"
         allowfullscreen
       ></iframe>
     </div>
     <div class="greyContainer" id="abhisharInfo">
+      <img src="assests/gladiator01.png" alt="">
       <p>
         "Abhishar is the annual magazine of AASF and also of the prestigious
         institute ABV-IIITM Gwalior. This magazine is a space for students to
@@ -78,7 +97,7 @@
 
     <div class="skullContainer">
       <iframe
-        style="width: 100%; height: 80vh"
+        style="width: 100%; height: 100vh"
         src="https://online.fliphtml5.com/gnitm/btld/"
         seamless="seamless"
         scrolling="no"
@@ -87,7 +106,29 @@
         allowfullscreen="true"
       ></iframe>
     </div>
+  </div>
     <script src="script.js"></script>
     <script src="app.js"></script>
+    <script>
+      function hide()
+      {
+        document.querySelector(".loader").style.display="none";
+        document.querySelector(".main-page").style.display="block";
+
+      }
+      let dragon1=document.getElementById("dragon1");
+      let dragon2=document.getElementById("dragon2");
+      // let moon=document.getElementById("moon");
+      // let stars=document.getElementById("stars");
+      // let mountainBe=document.getElementById("mountains-behinf");
+      // let mountainsFr=document.getElementById("mountains-front");
+      // let text=document.getElementById("text");
+
+      window.addEventListener("scroll",function(){
+        let value=window.scrollY;
+        dragon1.style.left=value*0.5+"px";
+      })
+
+    </script>
   </body>
 </html>
