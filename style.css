@@ -73,9 +73,6 @@ p{
     justify-content: right;
 }
 .greyContainer{
-    /* padding:50px; */
-    background-color: #000000;
-    /* background-image: url(assests/img2.jpg); */
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -99,18 +96,30 @@ p{
     flex-direction: row;
 }
 .midContainer{
+    overflow: hidden;
+    padding: 10px;
     width: 33.3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
 }
+.hiddenMid{
+    display: none;
+}
+.midContainer:hover span{
+    font-size: 65px;
+    margin-top: 0%;
+    height: 100%;
+    transition: 500ms;
+    text-align: center;
+}
 .midHeading{
+    margin-top: 50%;
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     text-shadow: rgb(0, 0, 0) 0px 0px 5px;
-
 }
 .blackClover{
     position: relative;
@@ -124,13 +133,58 @@ p{
     background-image: url(assests/Magic.jpg);
     background-size: cover;
 }
+.wizardsContainer:hover .hiddenMid{
+    display: block;
+    transition: 500ms;
+}
+.wizardsContainer:hover{
+    padding: 0px;
+    transition: 500ms ease-in-out;
+}
+.wizardsContainer:hover span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
 .SwordsContainer{
     background-image:url(assests/sword.jpg) ;
     background-size: cover;
 }
+.SwordsContainer:hover span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232836;
+}
+.SwordsContainer:hover .hiddenMid{
+    display: block;
+    transition: 500ms;
+}
+.SwordsContainer:hover{
+    padding: 0px;
+    transition: 500ms ease-in-out;
+}
 .BeastsContainer{
     background-image: url(assests/beast.jpg);
     background-size: cover;
+}
+.BeastsContainer:hover span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 150px;
+    background-color: #000000;
+}
+.BeastsContainer:hover .hiddenMid{
+    display: block;
+    width: 100%;
+    transition: 500ms;
+}
+.BeastsContainer:hover{
+    padding: 0px;
+    transition: 500ms ease-in-out;
 }
 #stage{
     min-height: 100vh;
@@ -148,8 +202,20 @@ p{
     flex-direction:row;
     background-color: black;
 }
+#abhisharInfo p{
+    padding: 50px;
+}
 #intro{
     background-image: url(assests/map.jpg);
+backdrop-filter: blur(2px);}
+.introText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    /* z-index: 2; */
 }
 .skullContainer{
     display: flex;
@@ -164,7 +230,52 @@ p{
 .main-page{
     display: none;
 }
-
+.container2{
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    font-size: 28px;
+}
+.qualityButtons{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.lowQuality{
+    color: white;
+    aspect-ratio: 1/1;
+    height: 100%;
+    background-size: cover;
+    background-image: url(assests/lowQuality.gif);
+    mix-blend-mode:hard-light;
+    text-decoration: none;
+}
+.lowQuality::after{
+    content: "Standard Resolution";
+    font-size: 17px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 1px;
+}
+.highQuality::after{
+    text-align: center;
+    font-size: 17px;
+    content: "Premium Resolution";
+}
+.highQuality{
+    text-decoration: none;
+    color: white;
+    background-position: -10px 0px;
+    background-size: cover;
+    aspect-ratio: 1/1;
+    height: 100%;
+    mix-blend-mode:hard-light;
+    background-image:url(assests/highQuality.gif) ;
+}
 .launchVideo{
     height: 100vh;
     display: flex;
