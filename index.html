@@ -47,7 +47,8 @@
       </header>
     <div class="wrapper">
       <img src="assests/dragon1.png" alt="" id="dragon1">
-      <img src="assests/dragon20.png" alt="" id="dragon2">
+      <img src="assests/dragon3.png" alt="" id="dragon2">
+      <img src="assests/fire.png" alt="" id="fire">
       <h1 class="Abhishar">ABHISHAR v13.0</h1>
       <h2 class="tagline">Alohmora into the alley of fantasy</h2>
     </div>
@@ -84,7 +85,7 @@
       ></iframe>
     </div>
     <div class="greyContainer" id="abhisharInfo">
-      <img src="assests/gladiator01.png" alt="">
+      <img src="assests/gladiator01.png" alt="" id="gladiator">
       <p>
         "Abhishar is the annual magazine of AASF and also of the prestigious
         institute ABV-IIITM Gwalior. This magazine is a space for students to
@@ -118,6 +119,8 @@
       }
       let dragon1=document.getElementById("dragon1");
       let dragon2=document.getElementById("dragon2");
+      let fire=document.getElementById("fire");
+
       // let moon=document.getElementById("moon");
       // let stars=document.getElementById("stars");
       // let mountainBe=document.getElementById("mountains-behinf");
@@ -126,7 +129,9 @@
 
       window.addEventListener("scroll",function(){
         let value=window.scrollY;
-        dragon1.style.left=value*0.5+"px";
+        dragon1.style.left=value*0.15+"px";
+        fire.style.bottom=(value*0.5)-200+"px";
+        dragon2.style.right=value*0.25+"px";
       })
 
     </script>
