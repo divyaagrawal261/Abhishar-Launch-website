@@ -50,9 +50,8 @@
       <img src="assests/dragon3.png" alt="" id="dragon2">
       <img src="assests/fire.png" alt="" id="fire">
       <h1 class="Abhishar">ABHISHAR v13.0</h1>
-      <h2 class="tagline">Alohmora into the alley of fantasy</h2>
+      <h2 class="tagline">Alohomora into the alley of fantasy</h2>
     </div>
-    <!-- <canvas id="stage"> </canvas> -->
     <div class="greyContainer" id="intro">
       <div class="introText">
       <p class="heading1">
@@ -68,6 +67,7 @@
       </p>
     </div>
     </div>
+    
     <div class="redContainer">
       <div class="wizardsContainer midContainer fadein" id="fadein-1">
         <span class="midHeading">Wizards and Witches</span>
@@ -124,7 +124,7 @@
       function hide()
       {
         document.querySelector(".loader").style.display="none";
-        document.querySelector(".main-page").style.display="block";
+        document.querySelector(".main-page").style.display="grid";
 
       }
       let dragon1=document.getElementById("dragon1");
@@ -133,11 +133,12 @@
 
       window.addEventListener("scroll",function(){
         let value=window.scrollY;
-        dragon1.style.left=value*0.25+"px";
+        dragon1.style.left=value*0.10+"px";
         fire.style.opacity=1-(value*0.0025);
         dragon2.style.right=value*0.35+"px";
       })
 
+      
     </script>
   </body>
 </html>
