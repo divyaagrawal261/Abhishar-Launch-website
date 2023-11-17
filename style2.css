@@ -15,19 +15,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
 }
 header .logo{
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    height: 100px;
 }
 header ul{
     display: flex;
@@ -35,6 +30,8 @@ header ul{
     align-items: center;
 }
 header ul li{
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+    font-size: 2em;
     list-style: none;
     margin-left: 20px;
 }
@@ -48,6 +45,7 @@ header ul li a:hover,header ul li a:active {
     background-color: white;
     font-weight: 700;
     color: #000000;
+    text-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
 }
 section{
     position: relative;
