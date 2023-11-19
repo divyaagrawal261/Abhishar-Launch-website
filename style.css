@@ -278,9 +278,9 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(assests/lowQuality.gif);
-  mix-blend-mode: hard-light;
+  background-image: url(assests/circle.gif);
   text-decoration: none;
+  /* animation: pulse 500ms 500ms infinite alternate ease-in-out; */
 }
 /* .lowQuality::after{
     content: "Standard Resolution";
@@ -405,7 +405,7 @@ iframe {
   background-image: url(assests/Magic.webp);
   background-size: cover;
   text-shadow: black 0px 0px 5px;
-  animation: float 1000ms 500ms infinite alternate ease-in-out;
+  animation: float 5000ms 1000ms infinite alternate ease-in-out;
 }
 #card2 {
   background-image: url(assests/sword.webp);
@@ -458,6 +458,14 @@ iframe {
 .loading_animation {
   height: 300px;
 }
+@keyframes pulse{
+    0%{
+height: 80px;
+    }
+    100%{
+height: 90px;
+    }
+}
 @keyframes float {
   0% {
     margin-top: 60px;
@@ -504,15 +512,15 @@ iframe {
   display: none;
 }
 #card_1 {
-  animation: float 1000ms 500ms infinite alternate ease-in-out;
+  animation: float 2000ms 500ms infinite alternate ease-in-out;
   background-image: url(assests/Magic.webp);
 }
 #card_2 {
-  animation: float 1000ms 300ms infinite alternate ease-in-out;
+  animation: float 2000ms 300ms infinite alternate ease-in-out;
   background-image: url(assests/sword.webp);
 }
 #card_3 {
-  animation: float 1000ms 100ms infinite alternate ease-in-out;
+  animation: float 2000ms 100ms infinite alternate ease-in-out;
   background-image: url(assests/beast.webp);
 }
 #card_1:hover {
@@ -629,6 +637,9 @@ iframe {
     box-sizing: border-box;
     width: inherit;
     color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-weight: bolder;
     text-shadow: none;
     font-size: 28px;
