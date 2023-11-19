@@ -26,11 +26,11 @@
   </head>
   <body onload="hide()">
     <div class="loader">
-      <img src="assests/goku_dribble_v2.gif" class="loading_animation" alt="">
+      <img src="assests/goku_dribble_v2.gif" class="loading_animation" >
     </div>
     <div class="main-page">
       <header>
-        <img src="assests/aasf-white.png" class="logo">
+        <img src="assests/aasf-white.png" class="logo" loading="lazy">
         <ul>
           <li><a href="https://www.aasf.in" class="active">AASF Website</a></li>
           <li><a href="#launchVideo">Launch Video</a></li>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="themeSection">
-      <img src="assests/gladiator01.png" class="left"></img>
+      <img src="assests/gladiator01.webp" class="left" loading="lazy"></img>
       <div class="right">
         <div class="theme_Text">"Not all those who <br>wander are lost"</div>
         <div class="cards_container">
@@ -78,68 +78,14 @@
         </div>
       </div>
     </div>
-    <!-- <div class="themeSection">
-      <div class="left">
-      </div>
-      <div class="themeleft">
-        <p class="themeText">"Not all those who <br>wander are lost"</p>
-        <div class="cardsContainer">
-          <div>
-        <div class="themeCard" id="card1">
-          <div class="CardHeading" id="head1">Wizards and Witches</div>
-          <div class="innerCard" id="innerCard1"></div>
-        </div>
-      </div>
-      <div>
-        <div class="themeCard" id="card2">
-          <div class="CardHeading" id="head2">Swords and Sorcery</div>
-          <div class="innerCard" id="innerCard2"></div>
-        </div>
-      </div>
-      <div>
-        <div class="themeCard" id="card3">
-          <div class="CardHeading" id="head3">Enchanted Beasts</div>
-          <div class="innerCard" id="innerCard3"></div>
-        </div>
-      </div>
-      </div>
-      </div>
-    </div> -->
-    <audio src="assests/bgmusic.m4a" loop ></audio>
     
-    <!-- <div class="redContainer">
-      <div class="wizardsContainer midContainer fadein" id="fadein-1">
-        <span class="midHeading">Wizards and Witches</span>
-        <img src="assests/dumbledore.gif" alt="" id="dumbledore" class="hiddenMid">
-      </div>
-      <div class="SwordsContainer midContainer fadein" id="fadein-2">
-        <span class="midHeading">Swords and Sorcery</span>
-        <img src="assests/swordHidden.gif" alt="" id="swordHidden" class="hiddenMid">
-      </div>
-      <div class="BeastsContainer midContainer fadein" id="fadein-3">
-        <span class="midHeading">Enchanted Beasts</span>
-        <img src="assests/dragonHidden.gif" alt="" id="dragonHidden" class="hiddenMid">
-      </div>
-    </div> -->
-
     <div class="launchVideo" >
       <iframe id="launchVideo"
         src="https://res.cloudinary.com/kunaaaaalll/video/upload/v1668946764/Abhishar/InShot_20221120_163233807_asnr8y.mp4"
         allowfullscreen
       ></iframe>
     </div>
-    <!-- <div class="greyContainer" id="abhisharInfo">
-      <img src="assests/gladiator01.png" alt="" id="gladiator">
-      <p>
-        "Abhishar is the annual magazine of AASF and also of the prestigious
-        institute ABV-IIITM Gwalior. This magazine is a space for students to
-        exhibit their literary talents and express their ideas and
-        opinions.“Abhishar”, the annual magazine of AASF, means companionship
-        and has evolved from the names of our late AASF members- Abhinav Saxena
-        and Tushar Sharma -two indispensable work engines of AASF."
-      </p>
-    </div> -->
-    
+  
     <div class="container2">
       Download the Spells!
     <div class="qualityButtons">
@@ -164,19 +110,7 @@
       {
         document.querySelector(".loader").style.display="none";
         document.querySelector(".main-page").style.display="grid";
-        var audioButton=document.createElement("audioButton");
-        document.addEventListener("click",event=>{
-          event.preventDefault();
-          var audio= document.createElement("audio");
-          audio.src="assests/bgmusic.m4a";
-          audio.loop=true;
-          audio.play();
-          document.querySelector("audio").volume=1;
-          document.querySelector("audio").play();
-        })
-        setTimeout(
-        audioButton.click(),500);
-       }
+      }
        
     </script>
   </body>

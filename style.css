@@ -121,7 +121,7 @@ p {
   text-shadow: rgb(0, 0, 0) 0px 0px 5px;
 }
 .wizardsContainer {
-  background-image: url(assests/Magic.jpg);
+  background-image: url(assests/Magic.webp);
   background-size: cover;
   background-position: center;
 }
@@ -144,7 +144,7 @@ p {
   background-color: black;
 }
 .SwordsContainer {
-  background-image: url(assests/sword.jpg);
+  background-image: url(assests/sword.webp);
   background-size: cover;
   background-position: center;
 }
@@ -167,7 +167,7 @@ p {
   transition: 500ms ease-in-out;
 }
 .BeastsContainer {
-  background-image: url(assests/beast.jpg);
+  background-image: url(assests/beast.webp);
   background-position: center;
   background-size: cover;
 }
@@ -352,7 +352,7 @@ p {
   opacity: 0.6;
 }
 .themeSection {
-  background-image: url(assests/background_white.jpg);
+  background-image: url(assests/background-white.webp);
   backdrop-filter: blur(5px);
   background-size: cover;
   display: flex;
@@ -402,20 +402,20 @@ iframe {
   font-size: 30px;
 }
 #card1 {
-  background-image: url(assests/Magic.jpg);
+  background-image: url(assests/Magic.webp);
   background-size: cover;
   text-shadow: black 0px 0px 5px;
   animation: float 1000ms 500ms infinite alternate ease-in-out;
 }
 #card2 {
-  background-image: url(assests/sword.jpg);
+  background-image: url(assests/sword.webp);
   background-size: cover;
   background-position: center center;
   text-shadow: black 0px 0px 5px;
   animation: float 1000ms 700ms infinite alternate ease-in-out;
 }
 #card3 {
-  background-image: url(assests/beast.jpg);
+  background-image: url(assests/beast.webp);
   background-size: cover;
   text-shadow: black 0px 0px 5px;
   animation: float 1000ms 300ms infinite alternate ease-in-out;
@@ -505,15 +505,15 @@ iframe {
 }
 #card_1 {
   animation: float 1000ms 500ms infinite alternate ease-in-out;
-  background-image: url(assests/Magic.jpg);
+  background-image: url(assests/Magic.webp);
 }
 #card_2 {
   animation: float 1000ms 300ms infinite alternate ease-in-out;
-  background-image: url(assests/sword.jpg);
+  background-image: url(assests/sword.webp);
 }
 #card_3 {
   animation: float 1000ms 100ms infinite alternate ease-in-out;
-  background-image: url(assests/beast.jpg);
+  background-image: url(assests/beast.webp);
 }
 #card_1:hover {
   background-image: url(assests/dumbledore.gif);
@@ -551,6 +551,9 @@ iframe {
   body {
     width: 100%;
   }
+  .loading_animation{
+    height: 200px;
+  }
   header {
     width: 100%;
     display: none !important;
@@ -575,6 +578,7 @@ iframe {
     padding: 20px;
     width: inherit;
     font-size: 50px;
+    text-align: center;
   }
   .tagline {
     text-align: center;
