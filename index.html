@@ -62,6 +62,25 @@
     </div>
 
     <div class="themeSection">
+      <img src="assests/gladiator01.png" class="left"></img>
+      <div class="right">
+        <div class="theme_Text">"Not all those who <br>wander are lost"</div>
+        <div class="cards_container">
+          <div class="theme_Card" id="card_1">
+              <p class="card_text">Wizards and Witches</p>
+          </div>
+          <div class="theme_Card" id="card_2">
+            <p class="card_text">Swords and Sorcery</p>
+        </div>
+        <div class="theme_Card" id="card_3">
+          <p class="card_text">Enchanted Beasts</p>
+      </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="themeSection">
+      <div class="left">
+      </div>
       <div class="themeleft">
         <p class="themeText">"Not all those who <br>wander are lost"</p>
         <div class="cardsContainer">
@@ -85,13 +104,8 @@
       </div>
       </div>
       </div>
-      <div class="themeRight">
-        <iframe id="launchVideo"
-        src="https://res.cloudinary.com/kunaaaaalll/video/upload/v1668946764/Abhishar/InShot_20221120_163233807_asnr8y.mp4"
-        allowfullscreen
-      ></iframe>
-      </div>
-    </div>
+    </div> -->
+    <audio src="assests/bgmusic.m4a" loop ></audio>
     
     <!-- <div class="redContainer">
       <div class="wizardsContainer midContainer fadein" id="fadein-1">
@@ -108,12 +122,12 @@
       </div>
     </div> -->
 
-    <!-- <div class="launchVideo" id="launchVideo">
-      <iframe
+    <div class="launchVideo" >
+      <iframe id="launchVideo"
         src="https://res.cloudinary.com/kunaaaaalll/video/upload/v1668946764/Abhishar/InShot_20221120_163233807_asnr8y.mp4"
         allowfullscreen
       ></iframe>
-    </div> -->
+    </div>
     <!-- <div class="greyContainer" id="abhisharInfo">
       <img src="assests/gladiator01.png" alt="" id="gladiator">
       <p>
@@ -125,16 +139,16 @@
         and Tushar Sharma -two indispensable work engines of AASF."
       </p>
     </div> -->
-
+    
+    <div class="container2">
+      Download the Spells!
+    <div class="qualityButtons">
+      <a href=""><div class="lowQuality"></div>Standard Resolution</a>
+      <a href=""><div class="lowQuality"></div>Premium Resolution</a>
+    </div></div>
     <div class="skullContainer">
-      <div class="container2">
-        Download the Spells!
-      <div class="qualityButtons">
-        <a href="https://drive.google.com/file/d/1tR5AejLQr-5bErVDbqn2plhxrjO1NAW4/view?usp=drive_link" class="lowQuality" download="Abhishar v13.0"></a>
-        <a  href="https://drive.google.com/file/d/1f6--m2xgpdCEULnDE6Aowwv758pzz-7E/view?usp=drive_link" class="highQuality" download="Abhishar v13.0"></a>
-      </div></div>
       <iframe
-        style="width: 100%; height: 100vh"
+        style=" width:100%; height: 100vh"
         src="https://online.fliphtml5.com/gnitm/btld/"
         seamless="seamless"
         scrolling="no"
@@ -145,24 +159,25 @@
     </div>
   </div>
     <script src="script.js"></script>
-    <script src="app.js"></script>
     <script>
       function hide()
       {
         document.querySelector(".loader").style.display="none";
         document.querySelector(".main-page").style.display="grid";
-
-      }
-      let dragon1=document.getElementById("dragon1");
-      let dragon2=document.getElementById("dragon2");
-      let fire=document.getElementById("fire");
-
-      window.addEventListener("scroll",function(){
-        let value=window.scrollY;
-        dragon1.style.left=value*0.10+"px";
-        fire.style.opacity=1-(value*0.0025);
-        dragon2.style.right=value*0.35+"px";
-      })
+        var audioButton=document.createElement("audioButton");
+        document.addEventListener("click",event=>{
+          event.preventDefault();
+          var audio= document.createElement("audio");
+          audio.src="assests/bgmusic.m4a";
+          audio.loop=true;
+          audio.play();
+          document.querySelector("audio").volume=1;
+          document.querySelector("audio").play();
+        })
+        setTimeout(
+        audioButton.click(),500);
+       }
+       
     </script>
   </body>
 </html>
