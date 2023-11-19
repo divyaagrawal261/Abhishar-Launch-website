@@ -228,9 +228,10 @@ p {
   /* backdrop-filter: blur(3px); */
 }
 .skullContainer {
+    background-image: url(assests/book_background.jpeg);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: last baseline;
   background-size: cover;
   height: 100vh;
 }
@@ -664,4 +665,11 @@ height: 90px;
   .qualityButtons a{
     font-size: 10px;
   }
+}
+
+.fp-iframe{
+    background-image: url(assests/book_background.jpeg);
+    opacity: 1;
+    background-blend-mode:hue;
+    background-size: cover;
 }
