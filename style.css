@@ -1,178 +1,371 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Marcellus', serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Marcellus", serif;
+  box-sizing: border-box;
 }
-.loader{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
+.loader {
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5e5cf;
 }
-.loading-animation{
-    width: 100vw;
+p {
+  font-family: "Marcellus", serif;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
 }
-p{
-    font-family: 'Marcellus', serif;
-    color: white;
-    text-align: center;
-    font-size: 32px;
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+  background-image: url(assests/background_20.webp);
+  background-size: 100% 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
 }
-.wrapper{
-    min-height: 100vh;
-    background-image: url(assests/bg6.jpg);
-    background-size: 100% 150%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
+.tagline {
+  z-index: 100;
+  color: white;
+  text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+  font-size: 30px;
 }
-.tagline{
-    color: white;
-    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
-    font-size: 30px;
+.Abhishar {
+  z-index: 100;
+  color: white;
+  font-size: 72px;
+  font-family: "MedievalSharp", cursive;
+  text-shadow: rgb(0, 0, 0) 0px 0px 5px;
 }
-.Abhishar{
-    color: white;
-    font-size: 72px;
-    font-family: 'MedievalSharp', cursive;
-    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+.greyContainer {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.tags{
-    background-color: rgba(0, 0, 0, 0.521);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    height: 33%;
-    color: white;
-    font-size: 72px;
-    font-family: 'MedievalSharp', cursive;
-    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+.heading1 {
+  color: white;
+  margin-bottom: 70px;
+  text-shadow: rgb(0, 0, 0) 0px 0px 50px;
 }
-.picture{
-    height: 100%;
+#intro {
+  background-image: url(assests/background_1.jpg);
+  backdrop-filter: blur(2px);
+  text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+  min-height: 100vh;
+  height: fit-content;
 }
-#enchantment{
-    justify-content: left;
-    background-color: black;
+.introText {
+  text-shadow: rgb(0, 0, 0) 0px 0px 5px;
+  display: flex;
+  background-color: #0000006e;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: fit-content;
+  padding: 100px;
 }
-#imagination{
-    background-color: #010511;
-    justify-content: left;
+.skullContainer {
+    background-image: url(assests/book_background.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  background-size: cover;
+  height: 100vh;
 }
-#magic{
-    background-color: #0f2226;
-    justify-content: right;
+::-webkit-scrollbar {
+  display: none;
 }
-.greyContainer{
-    padding:50px;
-    background-image: url(assests/img2.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main-page {
+  display: none;
 }
-.heading1{
-    color: white;
-    margin-bottom: 70px;
-    text-shadow: rgb(0, 0, 0) 0px 0px 60px;
-
+.container2 {
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  font-size: 28px;
 }
-.redContainer
-{
-    background-image: url(assests/landing-rev-slider-img-2.jpg);
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
+.qualityButtons {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
 }
-.midContainer{
-    width: 33.3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-repeat: no-repeat;
+.qualityButtons a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
 }
-.midHeading{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
-
+.qualityButtons a:hover {
+  color: yellow;
+  cursor: pointer;
 }
-.blackClover{
-    position: relative;
-    background-image: url(assests/landing-rev-2-image-1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: translateX(65vw);
-    height: 100vh;
+.lowQuality {
+  color: white;
+  aspect-ratio: 1/1;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(assests/circle.gif);
+  text-decoration: none;
 }
-.wizardsContainer{
-    background-image: url(assests/Magic.jpg);
-    background-size: cover;
+.launchVideo {
+  width: 100%;
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 16/9;
+  align-items: center;
+  justify-content: center;
 }
-.SwordsContainer{
-    background-image:url(assests/sword.jpg) ;
-    background-size: cover;
+.themeSection {
+  background-image: url(assests/background-white.webp);
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  color: white;
+  min-height: 100vh;
+  height: fit-content;
 }
-.BeastsContainer{
-    background-image: url(assests/beast.jpg);
-    background-size: cover;
+iframe {
+  height: 100%;
+  aspect-ratio: 16/9;
 }
-#stage{
-    min-height: 100vh;
+.loading_animation {
+  height: 300px;
 }
-.noisyContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: black;
-    background-size: cover;
-    height: 100vh;
+@keyframes pulse{
+    0%{
+height: 80px;
+    }
+    100%{
+height: 90px;
+    }
 }
-#abhisharInfo{
-    background-image: url(assests/dark-background.gif);
+@keyframes float {
+  0% {
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 10px 10px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
-#intro{
-    background-image: url(assests/map.jpg);
+.left {
+  height: 100vh;
+  width: 450px;
 }
-.skullContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(assests/landing-rev-slider-img-5-1.jpg);
-    background-size: cover;
-    height: 100vh;
+.right {
+  background-image: url(assests/banner.png);
+  background-size: cover;
+  background-position: center center;
+  padding-right: 100px !important;
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-::-webkit-scrollbar{
-    display: none;
+.theme_Text {
+  font-size: 52px;
+  text-shadow: black 1px 1px 5px;
 }
-
-.launchVideo{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.theme_Card {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 5px;
+  aspect-ratio: 3/5;
+  background-size: cover;
+  background-position: center;
+  text-shadow: black 1px 1px 5px;
+  transition: 500ms;
 }
-.launchVideo iframe{
-    height: 100%;
+.theme_Card:hover p {
+  display: none;
+}
+#card_1 {
+  animation: float 2000ms 500ms infinite alternate ease-in-out;
+  background-image: url(assests/Magic.webp);
+}
+#card_2 {
+  animation: float 2000ms 300ms infinite alternate ease-in-out;
+  background-image: url(assests/sword.webp);
+}
+#card_3 {
+  animation: float 2000ms 100ms infinite alternate ease-in-out;
+  background-image: url(assests/beast.webp);
+}
+#card_1:hover {
+  background-image: url(assests/dumbledore.gif);
+}
+#card_2:hover {
+  background-image: url(assests/blade-cut-smite.gif);
+}
+#card_3:hover {
+  background-image: url(assests/dragonHidden.gif);
+}
+.cards_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.themeOverlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+@media screen and(max-width: 375px) {
+    .Abhishar {
+        background-color: rgba(0, 0, 0, 0.575);
+        padding: 10px !important;
+        width: inherit;
+        font-size: 30px !important;
+      }
+      .tagline {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.575);
+        padding-top: 0px !important;
+        padding: 20px;
+        font-size: 25px;
+      }
+}
+@media screen and (max-width: 425px){
+  body {
     width: 100%;
+  }
+  .loading_animation{
+    height: 200px;
+  }
+  header {
+    width: 100%;
+    display: none !important;
+    position: absolute;
+  }
+  .main-page {
+    display: none;
+    width: inherit;
+  }
+  .main-page .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+  .Abhishar {
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 20px;
+    width: inherit;
+    font-size: 50px;
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding-top: 0px !important;
+    padding: 20px;
+    font-size: 35px;
+  }
+  .greyContainer {
+    height: 100vh;
+    background-size: cover;
+  }
+  .introText {
+    width: 100vw;
+    padding: 20px;
+    font-size: 18px;
+    height: 100vh;
+  }
+  .introText p,
+  .heading1 {
+    padding: 20px;
+    width: inherit;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+  .themeSection {
+    min-height: 0vh;
+    height: fit-content;
+    width: inherit;
+  }
+  .left {
+    display: none;
+  }
+  .cards_container {
+    display: none;
+  }
+  .right {
+    height: fit-content;
+    padding-right: 20px !important;
+    padding: 20px;
+    background-image: none;
+    width: inherit;
+  }
+  .cards_container{
+    display: flex;
+  }
+  .theme_Text{
+    box-sizing: border-box;
+    width: inherit;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: none;
+    font-size: 28px;
+  }
+  .theme_Card{
+    width: 30%;
+    animation: none !important;
+  }
+  .card_text{
+    font-size: 18px;
+  }
+  .launchVideo{
+    height: auto;
+    width: inherit;
+  }
+  .container2{
+    font-size: 18px;
+  }
+  .qualityButtons{
+    height: 70px;
+  }
+  .qualityButtons a{
+    font-size: 10px;
+  }
 }
-  .fadein {
-    opacity: 0;
-    transition: all 2.5s;
-    transform: translate(0, -300px);
-  }
-  
-  .fadein.visible {
+.fp-iframe{
+    background-image: url(assests/book_background.jpeg);
     opacity: 1;
-    transform: translate(0, 0);
-  }
+    background-blend-mode:hue;
+    background-size: cover;
+}

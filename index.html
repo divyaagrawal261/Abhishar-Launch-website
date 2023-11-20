@@ -22,19 +22,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css">
   </head>
-  <body>
+  <body onload="hide()">
     <div class="loader">
-        <video autoplay loop>
-            <source src="assests/loader1.mp4" type="video/mp4">
-        </video>
+      <img src="assests/goku_dribble_v2.gif" class="loading_animation" >
     </div>
+    <div class="main-page">
+      <header>
+        <img src="assests/aasf-white.png" class="logo" loading="lazy">
+        <ul>
+          <li><a href="https://www.aasf.in" class="active">AASF Website</a></li>
+          <li><a href="#launchVideo">Launch Video</a></li>
+          <li><a href="https://www.aasf.in/abhishar">Previous Versions</a></li>
+        </ul>
+      </header>
     <div class="wrapper">
       <h1 class="Abhishar">ABHISHAR v13.0</h1>
-      <h2 class="tagline">Alohmora into the alley of fantasy</h2>
+      <h2 class="tagline">Alohomora into the Alley of Fantasy</h2>
     </div>
-    <canvas id="stage"> </canvas>
     <div class="greyContainer" id="intro">
+      <div class="introText">
       <p class="heading1">
         "Welcome to a world where imagination knows no bounds, where the
         extraordinary intertwines with reality. Fantasy beckons, inviting you to
@@ -42,30 +50,6 @@
         unlikely heroes await. Within these pages, the impossible becomes truth,
         and dreams take flight."
       </p>
-      <p>
-        Embracing the fantastical, where stories ignite the spirit and fuel the
-        imagination, resonating deeply within the human soul.
-      </p>
-    </div>
-    <div class="redContainer">
-      <div class="wizardsContainer midContainer fadein" id="fadein-1">
-        <span class="midHeading">Wizards and Witches</span>
-      </div>
-      <div class="SwordsContainer midContainer fadein" id="fadein-2">
-        <span class="midHeading">Swords and Sorcery</span>
-      </div>
-      <div class="BeastsContainer midContainer fadein" id="fadein-3">
-        <span class="midHeading">Enchanted Beasts</span>
-      </div>
-    </div>
-
-    <div class="launchVideo">
-      <iframe
-        src="https://res.cloudinary.com/kunaaaaalll/video/upload/v1668946764/Abhishar/InShot_20221120_163233807_asnr8y.mp4"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="greyContainer" id="abhisharInfo">
       <p>
         "Abhishar is the annual magazine of AASF and also of the prestigious
         institute ABV-IIITM Gwalior. This magazine is a space for students to
@@ -75,19 +59,51 @@
         and Tushar Sharma -two indispensable work engines of AASF."
       </p>
     </div>
+    </div>
 
-    <div class="skullContainer">
-      <iframe
-        style="width: 100%; height: 80vh"
-        src="https://online.fliphtml5.com/gnitm/btld/"
-        seamless="seamless"
-        scrolling="no"
-        frameborder="0"
-        allowtransparency="true"
-        allowfullscreen="true"
+    <div class="themeSection">
+      <img src="assests/gladiator01.webp" class="left" loading="lazy"></img>
+      <div class="right">
+        <p class="theme_Text">"Not all those who<br>wander are lost"</p>
+        <div class="cards_container">
+          <div class="theme_Card" id="card_1">
+              <p class="card_text">Wizards and Witches</p>
+          </div>
+          <div class="theme_Card" id="card_2">
+            <p class="card_text">Swords and Sorcery</p>
+        </div>
+        <div class="theme_Card" id="card_3">
+          <p class="card_text">Enchanted Beasts</p>
+      </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="launchVideo" >
+      <iframe id="launchVideo"
+        src="https://res.cloudinary.com/kunaaaaalll/video/upload/v1668946764/Abhishar/InShot_20221120_163233807_asnr8y.mp4"
+        allowfullscreen
       ></iframe>
     </div>
+  
+    <div class="container2">
+      Download the Spells!
+    <div class="qualityButtons">
+      <a href="https://drive.google.com/file/d/1YNo3XQXGvoBffE1Vn5RcsMTxIyL2s3UI/view?usp=drive_link"><div class="lowQuality"></div>Low Resolution</a>
+      <a href="https://drive.google.com/file/d/1j1kaUnhdcoZoCi8Zcz9YGHK6VbmlUxVC/view?usp=drive_link"><div class="lowQuality"></div>High Resolution</a>
+    </div></div>
+    <div class="skullContainer">
+      <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/85821e5a8b.html" style="border: 0px; width: 100%; height: 100vh;"></iframe>
+    </div>
+  </div>
     <script src="script.js"></script>
-    <script src="app.js"></script>
+    <script>
+      function hide()
+      {
+        document.querySelector(".loader").style.display="none";
+        document.querySelector(".main-page").style.display="grid";
+      }
+       
+    </script>
   </body>
 </html>
